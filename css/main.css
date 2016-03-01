@@ -61,7 +61,7 @@ table {
 html, body {
   padding: 0px;
   margin: 0px;
-  background: #494949;
+  background: #f4f4f4;
   font-family: sans-serif; }
 
 /**
@@ -72,9 +72,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #f4f4f4; }
-  a:hover {
-    color: red; }
+  color: #494949; }
 
 /**
  * Basic typography style for copy text
@@ -101,11 +99,22 @@ a {
     width: 100%;
     justify-content: center; }
     .nav ul li {
-      margin: 3%;
+      padding: 3%;
       font-weight: lighter;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      color: #494949; }
+      .nav ul li:hover {
+        background-color: #494949;
+        color: #f4f4f4;
+        -webkit-transition: background-color .2s linear; }
+        .nav ul li:hover a {
+          color: #f4f4f4; }
+          .nav ul li:hover a:hover {
+            letter-spacing: 6px;
+            -webkit-transition: letter-spacing .2s linear; }
 
 .header {
+  background: #212121;
   background-image: url("../img/headerBG.png");
   background-size: contain;
   height: 30vh;
@@ -114,5 +123,30 @@ a {
   align-items: center;
   justify-content: center;
   color: #f4f4f4; }
+  .header p {
+    max-width: 50%;
+    text-align: center;
+    margin-top: 20px; }
+
+.albumGallery {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .albumGallery img:hover {
+    box-shadow: 2px 2px 2px #494949;
+    z-index: 1; }
+
+.chevrons {
+  position: relative;
+  top: 475px;
+  padding: 0 8% 0 8%;
+  display: flex;
+  color: #494949;
+  font-size: 35px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

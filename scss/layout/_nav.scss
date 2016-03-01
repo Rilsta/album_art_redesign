@@ -5,8 +5,20 @@
     width: 100%;
     justify-content: center;
     li {
-      margin: 3%;
-      @include text($weight: lighter, $l-spacing: 2px);
+      padding: 3%;
+      @include text($weight: lighter, $l-spacing: 2px, $color: $dark-grey);
+      &:hover{
+        background-color: $dark-grey;
+        color: $white;
+        -webkit-transition: background-color .2s linear;
+        a {
+          color:$white;
+          &:hover {
+            letter-spacing: 6px;
+            -webkit-transition: letter-spacing .2s linear;
+          }
+        }
+      }
     }
   }
 }

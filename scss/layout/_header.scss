@@ -4,6 +4,7 @@
 
 
 .header{
+  background: $black;
   background-image: url("../img/headerBG.png");
   background-size: contain;
   height: 30vh;
@@ -12,4 +13,9 @@
   align-items: center;
   justify-content: center;
   color:$white;
+  p{
+    max-width: 50%;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
