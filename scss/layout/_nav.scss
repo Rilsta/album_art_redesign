@@ -1,0 +1,12 @@
+.nav {
+  width: 100%;
+  ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    li {
+      margin: 3%;
+      @include text($weight: lighter, $l-spacing: 2px);
+    }
+  }
+}

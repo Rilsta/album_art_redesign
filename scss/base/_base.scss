@@ -12,12 +12,23 @@
 html, body {
   padding: 0px;
   margin: 0px;
+  background: $dark-grey;
+  font-family: sans-serif;
 }
 
 
 /**
  * Basic styles for links
  */
+
+ul{
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: $white;
+  &:hover{
+    color:red;
+  }
 }
