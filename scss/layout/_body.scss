@@ -1,12 +1,16 @@
 .albumGallery {
-  margin: 0;
+  margin: 0 0 75px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   img:hover {
 
-    box-shadow: 2px 2px 2px $dark-grey;
+    box-shadow: 5px 5px 5px $dark-grey;
     z-index: 1;
   }
+}
+
+.searchbar {
+
 }

@@ -16,6 +16,10 @@ html, body {
   font-family: sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 /**
