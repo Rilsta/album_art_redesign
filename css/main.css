@@ -76,6 +76,8 @@ ul {
 a {
   text-decoration: none;
   color: #494949; }
+  a:focus {
+    outline: none; }
 
 /**
  * Basic typography style for copy text
@@ -117,25 +119,63 @@ a {
 
 .header {
   position: relative;
+  height: 100vh;
+  display: flex;
   /*min-width: 720px;*/ }
 
+.searchbar input {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  width: 35%;
+  background: rgba(244, 244, 244, 0.2);
+  color: #c6c6c6;
+  font-size: 15px; }
+  .searchbar input:focus {
+    outline: none; }
+.searchbar button {
+  border: none;
+  background: rgba(244, 244, 244, 0.2);
+  color: #c6c6c6;
+  font-size: 15px;
+  padding: 5px 10px;
+  letter-spacing: 2px; }
+  .searchbar button:hover {
+    background: rgba(244, 244, 244, 0.5);
+    color: #c6c6c6;
+    letter-spacing: 6px;
+    transition: letter-spacing .2s linear; }
+
 .coverVidText {
+  font-weight: lighter;
+  letter-spacing: 2px;
   max-width: 80%;
   position: absolute;
-  width: 100%;
-  font-size: 20px;
+  font-size: 15px !important;
   text-align: center;
-  height: 120px;
   line-height: 1;
-  top: 30%;
+  top: 45%;
+  left: 10%;
   bottom: 0;
   margin: auto;
-  color: #fff; }
+  color: #f4f4f4; }
+  .coverVidText p {
+    margin: 10px auto; }
 
 .masthead-video {
   z-index: 0;
   width: 100vw;
-  height: 100vh; }
+  object-fit: cover;
+  min-height: 500px; }
+
+.fa-chevron-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 15vh;
+  font-size: 30px; }
+  .fa-chevron-down a {
+    opacity: .3; }
 
 .albumGallery {
   margin: 0 0 75px 0;
@@ -144,15 +184,26 @@ a {
   flex-wrap: wrap;
   justify-content: center; }
   .albumGallery img:hover {
+    width: 275px;
+    height: 275px;
     box-shadow: 5px 5px 5px #494949;
     z-index: 1; }
 
 .footer {
-  background: #c6c6c6;
+  background: #212121;
+  background-image: url("../img/headerBG.png");
+  background-size: contain;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .footer .socialIcons {
+    color: #f4f4f4; }
+    .footer .socialIcons i {
+      font-size: 50px;
+      margin: 10px; }
+    .footer .socialIcons a {
+      color: white; }
 
 .chevrons {
   position: relative;

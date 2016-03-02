@@ -22,49 +22,71 @@
 
 .header {
     position: relative;
+    height: 100vh;
+    display: flex;
     /*min-width: 720px;*/
 }
 
+.searchbar{
+  input{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 35%;
+    background: rgba($white, 0.2);
+    color: $light-grey;
+    font-size: 15px;
+    &:focus{
+      outline: none;
+    }
+  }
+  button{
+    border: none;
+    background: rgba($white, 0.2);
+    color: $light-grey;
+    font-size: 15px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    &:hover{
+      background: rgba($white, 0.5);
+      color: $light-grey;
+      letter-spacing: 6px;
+      transition: letter-spacing .2s linear;
+    }
+  }
+}
+
 .coverVidText {
+  font-weight: lighter;
+  letter-spacing: 2px;
   max-width: 80%;
   position: absolute;
-  width: 100%;
-
-  font-size: 20px;
+  font-size: 15px !important;
   text-align: center;
-  height: 120px;
   line-height: 1;
-  top: 30%;
+  top: 45%;
+  left: 10%;
   bottom: 0;
   margin: auto;
-  color: #fff;
+  color: $white;
+  p{
+    margin: 10px auto;
+  }
 }
 .masthead-video {
     z-index: 0;
     width: 100vw;
-    height: 100vh;
+    object-fit: cover;
+    min-height: 500px;
 }
 
-// .masthead-overlay {
-//     background-color: #000;
-//     opacity: 0.4;
-//     position: absolute;
-//     top: 0; left: 0;
-//     bottom: 0; right: 0;
-//     width: 100%;
-//     height: 99%;
-// }
-
-// p {
-//     position: absolute;
-//     width: 100%;
-//     font-weight: 700;
-//     font-size: 110px;
-//     text-align: center;
-//     height: 120px;
-//     line-height: 1;
-//     top: 30%;
-//     bottom: 0;
-//     margin: auto;
-//     color: #fff;
-// }
+.fa-chevron-down{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 15vh;
+  font-size: 30px;
+  a{
+    opacity: .3;
+  }
+}

@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   justify-content: center;
   img:hover {
-
+    width: 275px;
+    height: 275px;
     box-shadow: 5px 5px 5px $dark-grey;
     z-index: 1;
   }

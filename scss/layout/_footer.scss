@@ -4,9 +4,21 @@
 
 
 .footer {
-  background: $light-grey;
+  background: $black;
+  background-image: url("../img/headerBG.png");
+  background-size: contain;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  .socialIcons {
+    color: $white;
+    i {
+      font-size: 50px;
+      margin: 10px;
+    }
+    a {
+      color:white;
+    }
+  }
 }
